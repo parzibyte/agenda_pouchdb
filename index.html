@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="pouchdb.min.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <h1>Agenda con PouchDB</h1>
+  <a target="_blank" href="https://www.parzibyte.me/blog">https://www.parzibyte.me/blog</a>
+  <br />
+  <label for="nombreCompleto">Nombre:</label>
+  <br>
+  <input placeholder="Nombre y apellidos" type="text" name="nombreCompleto" id="nombreCompleto" />
+  <br>
+  <br>
+  <label for="direccion">Dirección:</label>
+  <br>
+  <textarea placeholder="Escribe la dirección..." name="direccion" id=direccion rows="4" cols="30"></textarea>
+  <br>
+  <br>
+  <label for="telefono">Teléfono:</label>
+  <br>
+  <input placeholder="Por ejemplo, 555 222 333" type="tel" name="telefono" id="telefono" />
+  <br>
+  <br>
+  <button id="btnGuardar">Guardar</button>
+  <button id="btnGuardarCambios">Guardar cambios</button>
+  <button id="btnCancelarEdicion">Cancelar</button>
+  <br />
+  <br />
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Dirección</th>
+        <th>Teléfono</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpoTabla">
+
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
